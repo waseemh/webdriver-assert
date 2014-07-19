@@ -29,9 +29,17 @@ Test alert window appearance:
 
 	WebDriverAssert.assertAlert(driver);
 	
+Test element visibilty:
+
+	WebDriverAssert.assertVisible(element);
+	
 Test element size:
 
 	WebDriverAssert.assertSizeEquals(element,100,150);
+	
+Test cookie existance in current domain:
+
+	WebDriverAssert.assertCookie(driver,"myCookie");
 	
 **CSS Assertions**
 
