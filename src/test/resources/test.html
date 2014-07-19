@@ -1,0 +1,117 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+Website Example
+</title>
+<style>
+.limited { width: 15.5em; }
+.hyphens {
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto; 
+}  
+
+#mydiv { 
+background-color: #008000; 
+color: red; 
+width: 100px;  
+border-style: solid; 
+border-color: yellow; 
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="mydiv">Testing CSS</div>
+
+<img id="mario" src="image.png" alt="mario" />
+
+<h1>Testing display of HTML elements</h1>
+
+<h2>This is 2nd level heading</h2>
+<p>This is a test paragraph.</p>
+<h3>This is 3rd level heading</h3>
+<p>This is a test paragraph.</p>
+<h4>This is 4th level heading</h4>
+<p>This is a test paragraph.</p>
+<h5>This is 5th level heading</h5>
+<p>This is a test paragraph.</p>
+<h6>This is 6th level heading</h6>
+<p>This is a test paragraph.</p>
+
+<h2>Forms</h2>
+
+<form action="http://www.cs.tut.fi/cgi-bin/run/~jkorpela/echo.cgi">
+<div>
+<input id="f55" type="hidden" name="hidden field" value="42">
+<input id="f22" type="password" name="password field" >
+This is a form containing various fields (with some initial
+values (defaults) set, so that you can see how input text looks
+like without actually typing it):</div>
+<div><label for="but">Button:
+<button id="but" type="submit" name="foo" value="bar">A cool<br>button</button></label></div>
+<div><label for="f0">Reset button:
+<input id="f0" type="reset" name="reset" value="Reset"></label></div>
+<div><label for="f1">Single-line text input field: <input id="f1" name="text" size="20" value="Default text."></label></div>
+<div><label for="f2">Multi-line text input field (textarea):</label><br>
+<textarea id="f2" name="textarea" rows="2" cols="20">
+Default text.
+</textarea></div>
+<div>The following two radio buttons are inside
+a <code>fieldset</code> element with a <code>legend</code>:</div>
+<fieldset>
+<legend>Legend</legend>
+<div><label for="f3"><input id="f3" type="radio" name="radio" value="1"> Radio button 1</label></div>
+<div><label for="f4"><input id="f4" type="radio" name="radio" value="2" checked> Radio button 2 (initially checked)</label></div>
+</fieldset>
+<fieldset>
+<legend>Check those that apply</legend>
+<div><label for="f5"><input id="f5" type="checkbox" name="checkbox"> Checkbox 1</label></div>
+<div><label for="f6"><input id="f6" type="checkbox" name="checkbox2" checked> Checkbox 2 (initially checked)</label></div>
+</fieldset>
+<div><label for="f10">A <code>select</code> element with <code>size="1"</code>
+(dropdown box):
+<select id="f10" name="select1" size="1">
+<option>one</option>
+<option selected>two</option>
+<option>three</option>
+</select></label></div>
+<div><label for="f11">A <code>select</code> element with <code>size="3"</code>
+(listbox):</label><br>
+<select id="f11" name="select2" size="3">
+<option>one
+<option selected>two
+<option>three
+</select></div>
+<div><label for="f99">Submit button:
+<input id="f99" type="submit" name="submit" value="Just a test"></label></div>
+</form>
+
+
+
+<ul id="mylist">
+  <li>elem1</li>
+  <li>elem2</li>
+  <li>elem3</li>
+</ul>
+
+<table id="table">
+<tr><th>Char. <th>Explanation <th>Notes
+<tr><td>ê <td>e with circumflex <td>Latin 1 character, should be ok
+<tr><td>&#8212; <td>em dash <td>Windows Latin 1 character, should be ok, too
+<tr><td>&#x100; <td>A with macron (line above) <td>Latin Extended-A character, not present in all fonts
+<tr><td>&Omega; <td>capital omega <td>A Greek letter
+<tr><td>&#x2212; <td>minus sign <td>Unicode minus
+<tr><td>&#x2300; <td>diameter sign <td>relatively rare in fonts
+</table>
+
+</body>
+
+</html>
