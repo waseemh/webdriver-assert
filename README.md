@@ -65,6 +65,7 @@ Test image visibilty: Fails if image link is broken or image isn't visible.
 **Form Assertions**
 
 Test text area elements:
+
 	WebDriverAssert.assertTextArea(element);
 	WebDriverAssert.assertTextEquals(element, "Default text.");
 
@@ -86,7 +87,7 @@ Test if element is a radio button:
 	
 **Menu Assertions**
 
-Assertions to be used with <select> and <option> form elements.
+Assertions to be used with '<select>' and '<option>' form elements.
 
 Test selected option in menu:
 
