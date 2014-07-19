@@ -87,7 +87,7 @@ Test if element is a radio button:
 	
 **Menu Assertions**
 
-Assertions to be used with '<select>' and '<option>' form elements.
+Assertions to be used with 'select' and 'option' form elements.
 
 Test selected option in menu:
 
