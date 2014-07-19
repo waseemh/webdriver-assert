@@ -10,6 +10,8 @@ Library includes ~50 assertions covering different aspects:
 - Page load time
 - Much more..
 
+Tested on Chorme and FireFox drivers.
+
 Examples
 ========
 
