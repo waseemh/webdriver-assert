@@ -1,7 +1,7 @@
 webdriver-assert
 ================
 
-Assertions library for WebDriver 2.0, based on JUnit.
+Assertions library for Selenium WebDriver 2.0, based on JUnit.
 Library includes ~50 assertions covering different aspects:
 - Elements types
 - CSS properties
@@ -21,9 +21,31 @@ Test response time of page load:
 
 	WebDriverAssert.assertResponseTimeLessThan(driver,"http://google.com",5000);
 
-Test :
+Test content appearance in web page:
 
-	Lxc remoteLxc = new Lxc("192.168.22.9","root","password"); //init SSH connection to remote LXC host
+	WebDriverAssert.assertTextPresent(driver, "This text should appear in web page");
+	
+	
+**CSS Assertions**
+
+	WebElement cssElement = driver.findElement(By.id("mydiv"));
+
+Test background color:
+
+	WebDriverAssert.assertCssBackgroundColorEquals(cssElement, Color.fromString("green"));
+	
+Test value of 'width' CSS property :
+	
+	WebDriverAssert.assertCssValueEquals(cssElement, "width", "100px");
+	
+Test border color: (supports compund and non-compund border-color properties)
+	
+	WebDriverAssert.assertCssBorderColorEquals(cssElement, Color.fromString("yellow"));
+	WebDriverAssert.assertCssBorderColorEquals(cssElement, Color.fromString("yellow"), CssPosition.TOP);
+	
+Test color CSS property of element:
+	WebDriverAssert.assertCssColorEquals(cssElement, Color.fromString("red"));
+	
 
 For more available functionality and examples, take a look at the unit tests or explore the API by yourself.	
 
